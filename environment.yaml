@@ -1,0 +1,13 @@
+name: labelseq_mapk
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pandas>=2.0
+  - numpy>=1.24
+  - scipy>=1.10
+  - pyyaml>=6.0
+  - biopython>=1.81
+  - matplotlib>=3.7
+  - pip

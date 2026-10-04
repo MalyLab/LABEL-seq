@@ -1,0 +1,23 @@
+# Data — too large for GitHub, deposited with the manuscript instead
+*.tsv
+*.csv
+*.gz
+*.zip
+*.xlsx
+*.fastq
+output/
+# `data/*` rather than `data/`: git cannot un-ignore a file inside an ignored
+# DIRECTORY, so the negation below only works if the directory itself is not
+# excluded. The DN threshold table is small enough to version and the
+# dominant-negative step needs it.
+data/*
+!data/dn_cutoffs_empty_vector.tsv
+
+# Per-pair interaction annotations (curated database evidence and partner
+# druggability) for the supplementary interaction table; small and hand-checked.
+!interactions/pair_annotations.tsv
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
